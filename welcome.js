@@ -21,7 +21,7 @@ client.once('ready', () => {
 
 client.on('guildMemberAdd', async (member) => {
   // Replace with your welcome channel ID:
-  const welcomeChannelId = '1379640980835401868';
+  const welcomeChannelId = '1379640980835439508';
 
   const channel = member.guild.channels.cache.get(welcomeChannelId);
   if (!channel) {
@@ -55,3 +55,4 @@ client.on('guildMemberAdd', async (member) => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+
